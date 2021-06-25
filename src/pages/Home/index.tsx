@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Text, View, SafeAreaView, TouchableOpacity } from 'react-native';
+import { Button, Text, View, SafeAreaView, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/core';
 import styles from './styles';
 
@@ -23,6 +23,7 @@ export default function HomePage() {
 
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar barStyle="light-content" />
             <View >
                 <Text style={styles.title}>AppAJF</Text>
             </View>

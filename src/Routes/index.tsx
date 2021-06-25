@@ -17,14 +17,15 @@ export default function Routes() {
 
     return (
         <NavigationContainer>
-            <StatusBar style="auto" />
+            <StatusBar style="light" />
       
             <Stack.Navigator >
 
-                <Stack.Screen name="Home" component={HomePage} />
-                <Stack.Screen name="Cadastro" component={CadastroPage} />
-                <Stack.Screen name="Login" component={LoginPage} />
-                <Stack.Screen name="Lista de Produtos" component={ListaProdutosPage} />
+                <Stack.Screen name="Home" component={HomePage} options={{title: 'Seja Bem Vindo!', headerStyle: {backgroundColor: '#5d875d'}, headerTintColor: '#fff'}}/>
+                <Stack.Screen name="Cadastro" component={CadastroPage} options={{headerTintColor: '#fff', headerStyle: {backgroundColor: '#5d875d'}}}/>
+                <Stack.Screen name="Login" component={LoginPage} options={{headerTintColor: '#fff', headerStyle: {backgroundColor: '#5d875d'}}}/>
+                <Stack.Screen name="Lista de Produtos" component={ListaProdutosPage} options={{headerTintColor: '#fff', headerStyle: {backgroundColor: '#5d875d'}}}/>
+
             </Stack.Navigator>
 
         </NavigationContainer>

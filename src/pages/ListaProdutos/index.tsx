@@ -23,7 +23,7 @@ export default function ListaProdutosPage({ navigation }: any) {
                         style={styles.exitButton}
                         onPress={inicio}
                     >
-                        <Ionicons name="home" Color='#c5e4d5' size={26} />
+                        <Ionicons name="home" color="white" size={26} />
                     </Button>
                 ),
             });
